@@ -1,0 +1,100 @@
+.textarea{
+    background-color: hsl(0, 0%, 89%);
+    border:thin;
+    border-radius: 3px;
+}
+.name{
+    width:150px;
+    text-align: center;
+}
+.myimg{
+    width:240px;
+}
+
+.card {
+    position: absolute;
+    height:314px;
+    background: #000814;
+    border-radius: 20px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+  }
+  .card h2, span {
+    height:314px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 800;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  
+  span {
+    top: 75%;
+  }
+  
+  .card .content h3 {
+
+    height:234px;
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+  .card .content p {
+    font-size: 1.6rem;
+    line-height: 25px;
+  }
+  .card .content {
+    
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .cardBox::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 150%;
+    background: #40E0D0;
+  background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    animation: glowing01 5s linear infinite;
+    transform-origin: center;
+    animation: glowing 5s linear infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  body{
+  background-image: url("https://cdn.mos.cms.futurecdn.net/tzoHwhjgFhPnWVkCcWfDU3.jpg");
+  background-repeat: no-repeat;
+  }
+  
+  .footer{
+    background-color: #FF8C00;
+    color:black
+  }
